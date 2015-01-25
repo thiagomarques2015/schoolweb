@@ -1,0 +1,22 @@
+<table class="table table-striped" ng-if="aluno">
+    <thread>
+	    <tr>
+	        <th>Matricula
+	        <th>Nome
+	        <th>Idade
+	        <th>Email
+	        <th>PF1
+	        <th>PF2</th>
+	    </tr>
+	</thread>
+    <tr>
+        <td>{{aluno.matricula}}</td>
+        <td>{{aluno.nome}}</td>
+        <td>{{aluno.idade}}</td>
+        <td>{{aluno.email}}</td>
+        <td>{{aluno.pf1}}</td>
+        <td>{{aluno.pf2}}</td>
+    </tr>
+</table>
+<p ng-if="!aluno" class="alert alert-info" role="alert"><span class="glyphicon glyphicon-warning-sign"></span>	Não existe aluno com essa matrícula ou nome</p>
+</div>

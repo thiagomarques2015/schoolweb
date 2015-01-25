@@ -1,0 +1,22 @@
+<div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thread>
+	    <tr>
+	        <th>Matricula
+	        <th>Nome
+	        <th>Idade
+	        <th>Email
+	        <th>PF1
+	        <th>PF2</th>
+	    </tr>
+	</thread>
+    <tr ng-repeat="aluno in alunos">
+        <td>{{aluno.matricula}}</td>
+        <td>{{aluno.nome}}</td>
+        <td>{{aluno.idade}}</td>
+        <td>{{aluno.email}}</td>
+        <td>{{aluno.pf1}}</td>
+        <td>{{aluno.pf2}}</td>
+    </tr>
+</table>
+</div>

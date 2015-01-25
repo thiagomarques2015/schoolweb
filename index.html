@@ -1,0 +1,33 @@
+<html ng-app="app">
+<head>
+	<title>
+		Sistema WEB
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li><a ng-class="{active: activetab == '/'}" href="#/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+		<li><a ng-class="{active: activetab == '/cadastrar'}" href="#/cadastrar"><span class="glyphicon glyphicon-user"></span> Cadastrar Aluno</a></li>
+		<li><a ng-class="{active: activetab == '/cadastrar-nota-aluno'}" href="#/cadastrar-nota-aluno"><span class="glyphicon glyphicon-sort-by-alphabet"></span> Cadastrar Nota do Aluno</a></li>
+		<li><a ng-class="{active: activetab == '/media-aluno'}" href="#/media-aluno"><span class="glyphicon glyphicon-sort-by-attributes-alt"></span> Calcular Média</a></li>
+		<li><a ng-class="{active: activetab == '/consultar-aluno'}" href="#/consultar-aluno"><span class="glyphicon glyphicon-search"></span> Consultar Aluno</a></li>
+		<li><a ng-class="{active: activetab == '/consultar-alterar-aluno'}" href="#/consultar-alterar-aluno"><span class="glyphicon glyphicon-pencil"></span> Alterar Aluno</a></li>
+		<li><a ng-class="{active: activetab == '/excluir-aluno'}" href="#/excluir-aluno"><span class="glyphicon glyphicon-trash"></span> Excluir Aluno</a></li>
+		<li><a ng-class="{active: activetab == '/relatorio'}" href="#/relatorio"><span class="glyphicon glyphicon-file"></span> Relatório de alunos</a></li>
+	</ul>
+
+	<div ng-view></div>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+
+	<script src="app.js"></script>
+	<script src="js/controllers.js"></script>
+</body>
+</html>
